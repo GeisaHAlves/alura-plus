@@ -4,7 +4,7 @@
         --botao-azul: #167BF7;
         --cor-de-fundo: #00030C;
         --fonte-principal: 'Inter', sans-serif;
-        --botao-azul-efeito: #71f351;
+        --botao-azul-efeito: #3c92fa;
 }
 
 body {
@@ -147,6 +147,428 @@ body {
 
 .lista__link a:active {
     color: purple;
+}
+
+/* ============================================
+   RESPONSIVIDADE - CELULAR (até 480px)
+   ============================================ */
+@media (max-width: 480px) {
+    .container {
+        height: auto;
+        grid-template-columns: 1fr;
+        padding: 2em 1em;
+    }
+
+    .principal {
+        background-size: contain;
+        background-position: center;
+    }
+
+    .container__caixa {
+        margin: 1em 0;
+        padding: 1em 0;
+    }
+
+    .container__titulo {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .container__imagem {
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    .container__botao {
+        padding: 0.8em;
+        font-size: 14px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .container__aviso {
+        font-size: 10px;
+        margin-top: 1em;
+    }
+
+    .secundario {
+        margin: 2em 1em;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .secundario__imagem {
+        width: 100%;
+        margin-bottom: 1.5em;
+    }
+
+    .container__descricao {
+        padding: 1em 0;
+    }
+
+    .descricao__titulo {
+        font-size: 24px;
+        margin-bottom: 0.5em;
+    }
+
+    .descricao__texto {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .secundario__botao {
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    .dispositivos {
+        margin: 2em 1em;
+    }
+
+    .dispositivos__titulo {
+        font-size: 24px;
+        margin-bottom: 1.5em;
+    }
+
+    .dispositivos__lista {
+        flex-direction: column;
+        gap: 1.5em;
+        margin: 2em 0;
+    }
+
+    .dispositivos__lista li {
+        margin-bottom: 1em;
+    }
+
+    .dispositivos__lista img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .lista__item {
+        font-size: 20px;
+    }
+
+    .rodape {
+        margin: 2em 1em;
+    }
+
+    .rodape__logo {
+        width: 150px;
+    }
+
+    .rodape__lista {
+        flex-direction: column;
+        margin-top: 1.5em;
+        gap: 1em;
+    }
+
+    .lista__link a {
+        margin-left: 0;
+        display: block;
+    }
+
+    .rodape__texto {
+        font-size: 12px;
+        margin: 0.8em 0;
+        line-height: 1.4;
+    }
+}
+
+/* ============================================
+   RESPONSIVIDADE - TABLET (481px até 768px)
+   ============================================ */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        height: auto;
+        grid-template-columns: 1fr;
+        padding: 2em;
+    }
+
+    .principal {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container__caixa {
+        margin: 2em 1em;
+    }
+
+    .container__titulo {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .container__imagem {
+        width: 80%;
+        margin: 1.5em auto;
+    }
+
+    .container__botao {
+        padding: 1em;
+        font-size: 15px;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container__aviso {
+        font-size: 11px;
+        margin-top: 1em;
+    }
+
+    .secundario {
+        margin: 2em;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .secundario__imagem {
+        width: 100%;
+        margin-bottom: 2em;
+        order: -1;
+    }
+
+    .container__descricao {
+        padding: 1.5em;
+    }
+
+    .descricao__titulo {
+        font-size: 32px;
+        margin-bottom: 0.5em;
+    }
+
+    .descricao__texto {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .secundario__botao {
+        display: inline-block;
+        margin-top: 1.5em;
+    }
+
+    .dispositivos {
+        margin: 3em 2em;
+    }
+
+    .dispositivos__titulo {
+        font-size: 32px;
+        margin-bottom: 2em;
+    }
+
+    .dispositivos__lista {
+        flex-direction: row;
+        gap: 2em;
+        justify-content: center;
+        margin: 3em 0;
+    }
+
+    .dispositivos__lista img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .lista__item {
+        font-size: 24px;
+    }
+
+    .rodape {
+        margin: 3em 2em;
+    }
+
+    .rodape__logo {
+        width: 200px;
+    }
+
+    .rodape__lista {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 2em;
+        gap: 1em;
+    }
+
+    .lista__link a {
+        margin-left: 1em;
+    }
+
+    .rodape__texto {
+        font-size: 13px;
+        margin: 1em 0;
+        line-height: 1.5;
+    }
+}
+
+/* ============================================
+   RESPONSIVIDADE - NOTEBOOK (769px até 1024px)
+   ============================================ */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        height: 100vh;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container__caixa {
+        margin: 0 3em;
+    }
+
+    .container__titulo {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .container__imagem {
+        width: 90%;
+        margin: 1em 0;
+    }
+
+    .container__botao {
+        padding: 0.9em;
+        font-size: 15px;
+    }
+
+    .container__aviso {
+        font-size: 12px;
+    }
+
+    .secundario {
+        margin: 0 3em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+        align-items: center;
+    }
+
+    .secundario__imagem {
+        width: 100%;
+    }
+
+    .container__descricao {
+        padding: 1.5em;
+    }
+
+    .descricao__titulo {
+        font-size: 36px;
+        margin-bottom: 0.5em;
+    }
+
+    .descricao__texto {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .secundario__botao {
+        display: inline-block;
+        margin-top: 1em;
+    }
+
+    .dispositivos {
+        margin: 3em;
+    }
+
+    .dispositivos__titulo {
+        font-size: 40px;
+        margin-bottom: 2em;
+    }
+
+    .dispositivos__lista {
+        gap: 3em;
+        margin: 3em 0;
+    }
+
+    .dispositivos__lista img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .lista__item {
+        font-size: 28px;
+    }
+
+    .rodape {
+        margin: 3em;
+    }
+
+    .rodape__logo {
+        width: 250px;
+    }
+
+    .rodape__lista {
+        margin-top: 1.5em;
+        gap: 0.5em;
+    }
+
+    .lista__link a {
+        margin-left: 1.5em;
+        font-size: 14px;
+    }
+
+    .rodape__texto {
+        font-size: 13px;
+        margin: 1em 0;
+    }
+}
+
+/* ============================================
+   RESPONSIVIDADE - COMPUTADOR/DESKTOP (acima de 1025px)
+   ============================================ */
+@media (min-width: 1025px) {
+    /* Mantém os estilos originais já definidos acima */
+    .container {
+        height: 100vh;
+        grid-template-columns: 50% 50%;
+    }
+
+    .container__caixa {
+        margin: 0 6em;
+    }
+
+    .container__titulo {
+        font-size: 28px;
+    }
+
+    .container__botao {
+        padding: 1em;
+    }
+
+    .secundario {
+        margin: 0 10em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+
+    .secundario__imagem {
+        width: 80%;
+    }
+
+    .descricao__titulo {
+        font-size: 48px;
+    }
+
+    .descricao__texto {
+        font-size: 16px;
+    }
+
+    .dispositivos__titulo {
+        font-size: 48px;
+    }
+
+    .lista__item {
+        font-size: 32px;
+    }
+
+    .rodape__lista {
+        margin-top: 1em;
+    }
+
+    .lista__link a {
+        margin-left: 1em;
+    }
+
+    .rodape__texto {
+        font-size: 14px;
+    }
 }
 
 .container__botao:hover {
